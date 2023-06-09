@@ -39,12 +39,6 @@ const options = {
       },
       "interactivity": {
           "detectsOn": "window",
-          "events": {
-            "onClick": {
-              "enable": true,
-              "mode": "repulse",
-            },
-          },
           "modes":{
               "connect": {
                   "distance": 1,
