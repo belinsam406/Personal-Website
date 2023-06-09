@@ -1,4 +1,14 @@
 const options = {
+    "background": {
+        "color": {
+          "value": "#000000"
+        },
+        "image": "",
+        "position": "50% 50%",
+        "repeat": "no-repeat",
+        "size": "cover",
+        "opacity": 1
+      },
     particles: {
         number: {
           value: 120,
