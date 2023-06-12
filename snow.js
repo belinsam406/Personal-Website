@@ -2,16 +2,27 @@ const options = {
     name: "Snow",
     particles: {
         number: {
-            value: 400,
+            value: 500,
             density: {
                 enable: true,
             },
         },
         color: {
-            value: "#ffffff",
+            value: "#000000",
         },
         shape: {
-            type: "circle",
+            type: "images",
+            options:{
+                images:[
+                    {
+                        src:"https://static.vecteezy.com/system/resources/previews/013/743/891/original/white-snowflake-icon-png.png",
+                        // src:"https://www.pngmart.com/files/11/Christmas-Black-Snowflake-PNG-Picture.png",
+                        width: 20,
+                        height: 20
+                        
+                    }
+                ]
+            }
         },
         opacity: {
             value: 1,
@@ -46,15 +57,6 @@ const options = {
     },
     
 };
-// move: {
-        //     enable: true,
-        //     speed: .8,
-        //     direction: "bottom",
-        //     random: true,
-        //     straight: false,
-        //     outMode: "out",
-        //     bounce: true,
-        //   },
 
 // tsParticles.load has two parameters, the first one is the id of the container, the second one is an object with the options
 tsParticles.load("tsparticles", options);
