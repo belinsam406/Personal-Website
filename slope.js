@@ -59,6 +59,6 @@ function drawRock(x, y) {
   context.fill();
 }
 
-var background = document.getElementById("background");
-var context_background = canvas.getContext("2d");
-context_background.fillStyle = "1616f3";
+// var background = document.getElementById("background");
+// var context_background = canvas.getContext("2d");
+// context_background.fillStyle = rgb(52, 144, 248);
