@@ -17,7 +17,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(52, 144, 248);
+    /* background-color: rgb(52, 144, 248); */
+    background-color: #87CEEB;
 }
 
 #information-container {
@@ -54,6 +55,6 @@
     vertical-align: bottom;
     z-index: -2;
     position: absolute;
-    bottom: 0.5vw;
+    bottom: 0px;
     right: 0px;
 }
