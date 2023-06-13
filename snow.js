@@ -1,5 +1,6 @@
 const options = {
     name: "Snow",
+    fpsLimit: 60,
     particles: {
         number: {
             value: 500,
@@ -8,21 +9,10 @@ const options = {
             },
         },
         color: {
-            value: "#000000",
+            value: "#FFFFFF",
         },
         shape: {
-            type: "images",
-            options:{
-                images:[
-                    {
-                        src:"https://static.vecteezy.com/system/resources/previews/013/743/891/original/white-snowflake-icon-png.png",
-                        // src:"https://www.pngmart.com/files/11/Christmas-Black-Snowflake-PNG-Picture.png",
-                        width: 20,
-                        height: 20
-                        
-                    }
-                ]
-            }
+            type: "circle"
         },
         opacity: {
             value: 1,
@@ -39,7 +29,7 @@ const options = {
         },
         wobble: {
             enable: true,
-            distance: 10,
+            distance: 5,
             speed: 1,
         },
         zIndex: {
@@ -53,9 +43,62 @@ const options = {
         },
     },
     background: {
-        color: "#000000",
+        // color: "#000000"
+        color: {
+            value: "transparent",
+          },
     },
-    
+    emitters: {
+        position: {
+            y: 50,
+            x: 73
+        },
+        rate: {
+            delay: 1,
+            quantity: 1
+        },
+        size: {
+            width: 0,
+            height: 0
+        },
+        particles: {
+            move: {
+                speed: 6,
+                direction: "bottom",
+                out_mode: "out",
+                straight: false,
+                outModes: {
+                    default: "destroy",
+                }
+            },
+            wobble: {
+                enable: true,
+                distance: 20,
+                speed: 1,
+            },
+            number: {
+                value: 10,
+                density: {
+                    enable: true,
+                },
+            },
+            shape: {
+                character: [
+                    {
+                        fill: true,
+                        font: "Verdana",
+                        value: ["🏂", "⛷️"],
+                        style: "",
+                        weight: 400
+                    }
+                ],
+                type: "char"
+            },
+            size: {
+                value: 30,
+            },
+        },
+    },
 };
 
 // tsParticles.load has two parameters, the first one is the id of the container, the second one is an object with the options

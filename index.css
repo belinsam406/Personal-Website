@@ -10,6 +10,16 @@
     height: 100vh;
 }
 
+#background {
+    z-index: -3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
 #information-container {
     z-index: 0;
     height: 5vw;
@@ -23,7 +33,7 @@
 
 #information {
     color: white;
-    margin: 0;
+    margin: -2;
     padding: 2% 5%;
     text-align: center;
     font-family: Calibri;
@@ -40,10 +50,10 @@
     font-family: elephant;
 }
 
-#slope-container{
-    z-index: 0;
+#slope-container {
+    vertical-align: bottom;
+    z-index: -2;
     position: absolute;
     bottom: 0.5vw;
     right: 0px;
 }
-
