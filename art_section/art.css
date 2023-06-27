@@ -16,7 +16,6 @@
     gap: 100px;
 }
 #image1{
-    width: 100%;
-    height: auto;
-    max-width: 502;
+    max-width:100%;
+    height:auto;
 }
