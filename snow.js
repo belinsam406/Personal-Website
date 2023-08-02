@@ -21,6 +21,10 @@ const options = {
             value: 2,
         },
         move: {
+            angle: {
+                offset: 0,
+                value: 100,
+            },
             enable: true,
             speed: 2,
             direction: "bottom",
@@ -43,7 +47,6 @@ const options = {
         },
     },
     background: {
-        // color: "#000000"
         color: {
             value: "transparent",
           },
@@ -51,7 +54,7 @@ const options = {
     emitters: {
         position: {
             y: 50,
-            x: 73
+            x: 83
         },
         rate: {
             delay: 1,

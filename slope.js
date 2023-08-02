@@ -5,7 +5,8 @@ var context = canvas.getContext("2d");
 context.fillStyle = "#FFFAFA";
 context.beginPath();
 context.moveTo(0, 650);
-context.lineTo(500, 200);
+// context.lineTo(500, 200);
+context.lineTo(1000,0)
 context.lineTo(1000, 650);
 context.closePath();
 context.fill();
