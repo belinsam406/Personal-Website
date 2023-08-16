@@ -1,19 +1,9 @@
 * {
     /* margin: 10px 10px 10px 10px; */
-    margin: 0;
+    margin: 10px;
     border: 0;
     /* padding: 10px 10px 10px 10px; */
     padding: 0;
-}
-
-#temp {
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: aqua;
 }
 
 #title {
@@ -21,7 +11,7 @@
 }
 
 #image-container {
-    background-color: pink; 
+    /* background-color: pink;  */
     max-height: 1000px;
     min-height: 500px;
     width: 100%;
@@ -40,14 +30,14 @@
     object-fit: contain;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-div.caption-container {
-    text-align: center;
-    padding: 0px 20px 0px;
-}
 
 
 #spacer {
     height: 20px;
-    color: tomato;
+    /* color: tomato; */
     opacity: 0.33;
+}
+
+#return-home{
+    text-align: center;
 }
