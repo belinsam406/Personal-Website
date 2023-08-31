@@ -1,0 +1,27 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+canvas {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.astronomy-container{
+    
+    .text-container{
+        text-align: center;
+        #title{
+            font-size: 5em;
+        }
+    }
+    
+    .canvas-container {
+        display: flex;
+        justify-content: center;
+        height: 100vh; /* Make the container fill the entire viewport height */
+    }
+}
