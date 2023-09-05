@@ -9,6 +9,14 @@ canvas {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+a{
+    display: flex;
+    justify-content: center;
+}
+
+.spacer{
+    height: 20px;
+}
 
 .astronomy-container{
     
@@ -22,6 +30,7 @@ canvas {
     .canvas-container {
         display: flex;
         justify-content: center;
-        height: 100vh; /* Make the container fill the entire viewport height */
+        /* Make the container fill the entire viewport height */
+        /* height: 100vw; */
     }
 }
