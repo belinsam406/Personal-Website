@@ -43,7 +43,8 @@ function setup() {
   playerAnimationManager = 0;
   //image mode to center and creating the canvas
   imageMode(CENTER);
-  createCanvas(400, 400);
+  var canvas = createCanvas(400, 400);
+  canvas.parent('container1');
   
   //creating the player
   player1 = new player(

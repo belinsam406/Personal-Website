@@ -9,28 +9,48 @@ canvas {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-a{
+a {
     display: flex;
     justify-content: center;
 }
 
-.spacer{
+.spacer {
     height: 20px;
 }
 
-.astronomy-container{
-    
-    .text-container{
+.astronomy-container {
+
+    .text-container {
         text-align: center;
-        #title{
+
+        #title {
             font-size: 5em;
         }
     }
-    
+
     .canvas-container {
         display: flex;
         justify-content: center;
         /* Make the container fill the entire viewport height */
         /* height: 100vw; */
     }
+}
+
+.button-container {
+    text-align: center;
+}
+
+.home-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #727272;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.home-button:hover {
+    background-color: #000;
 }
