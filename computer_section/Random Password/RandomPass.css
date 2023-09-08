@@ -11,5 +11,31 @@
 #spacer {
     height: 20px;
     /* color: tomato; */
-    opacity: 0.33;
+    /* opacity: 0.33; */
+}
+
+.button-container {
+  /* position: absolute; */
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  /* text-align: center; */
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #81A91A;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.home-button:hover {
+  background-color: #75a100;
 }

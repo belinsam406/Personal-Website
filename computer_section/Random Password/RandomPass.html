@@ -1,29 +1,36 @@
 <html lang="en">
-    <head>
-        <link rel="icon" href="../../Assets/me/IMG_3627.JPG" type="image/x-icon">
-        <title>Samuel Belin</title>
-        <link rel="stylesheet" href="RandomPass.css ">
-    </head>
-    <body>
-        <div class="container">
-            <h2>Random Password Generator</h2>
-            <label for="length">Password Length:</label>
-            <input type="number" id="length" min="1" value="12"><br>
 
-            <label for="includeSpecial">Include Special Characters:</label>
-            <input type="checkbox" id="includeSpecial"><br>
+<head>
+    <link rel="icon" href="../../Assets/me/IMG_3627.JPG" type="image/x-icon">
+    <title>Samuel Belin</title>
+    <link rel="stylesheet" href="RandomPass.css ">
+</head>
 
-            <label for="includeUpper">Include Uppercase Letters:</label>
-            <input type="checkbox" id="includeUpper"><br>
+<body>
+    <div class="container">
+        <h2>Random Password Generator</h2>
+        <label for="length">Password Length:</label>
+        <input type="number" id="length" min="1" value="12"><br>
 
-            <label for="includeNums">Include Numbers:</label>
-            <input type="checkbox" id="includeNums"><br>
+        <label for="includeSpecial">Include Special Characters:</label>
+        <input type="checkbox" id="includeSpecial"><br>
 
-            <button onclick="generateRandomPassword()">Generate Password</button>
-            <p id="password"></p>
-          </div>
+        <label for="includeUpper">Include Uppercase Letters:</label>
+        <input type="checkbox" id="includeUpper"><br>
 
-        <script src="./random_password.js"></script>
-        <a href="../../index.html">home</a>
-    </body>
+        <label for="includeNums">Include Numbers:</label>
+        <input type="checkbox" id="includeNums"><br>
+
+        <button onclick="generateRandomPassword()">Generate Password</button>
+        <p id="password"></p>
+    </div>
+
+    <script src="./random_password.js"></script>
+    <!-- <a href="../index.html">home</a> -->
+    <div id="spacer"></div>
+    <div class="button-container">
+        <a href="../index.html" class="home-button">Return Home</a>
+    </div>
+</body>
+
 </html>
