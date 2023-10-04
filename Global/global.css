@@ -1,0 +1,79 @@
+/* :root[data-theme="light"] {
+  --text: #000405;
+  --background: #89cfeb;
+  --primary: #cbc4c2;
+  --secondary: #d0d6d7;
+  --accent: #766865;
+}
+:root[data-theme="dark"] {
+  --text: #fafeff;
+  --background: #145a76;
+  --primary: #3d3634;
+  --secondary: #282e2f;
+  --accent: #9a8c89;
+} */
+@import url("https://fonts.googleapis.com/css?family=Pixelify Sans:700|Pixelify Sans:400");
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,500;1,100;1,600&display=swap');
+
+:root {
+    --text: #000405;
+    --background: #89cfeb;
+    --primary: #cbc4c2;
+    --secondary: #d0d6d7;
+    --accent: #766865;
+}
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 75%;
+    scroll-behavior: smooth;
+    /* overflow: hidden; */
+}
+
+body {
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 1.8rem;
+    /* 18px */
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--text);
+    background-color: var(--background-color);
+    /* filter: drop-shadow(0px 4px 4px var(--accent)); */
+    /*   background-color: blue; */
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    filter: drop-shadow(0px 4px 4px var(--accent));
+    z-index: 2;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+}
+
+.list li {
+    margin: 10px;
+    text-align: center;
+}
+
+a {
+    color: var(--text);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--secondary);
+}

@@ -12,14 +12,6 @@
   --secondary: #282e2f;
   --accent: #9a8c89;
 } */
-
-/* :root {
-    --text: #000405;
-    --background: #89cfeb;
-    --primary: #fe9971;
-    --secondary: #fef3c8;
-    --accent: #f70238;
-} */
 @import url("https://fonts.googleapis.com/css?family=Pixelify Sans:700|Pixelify Sans:400");
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,500;1,100;1,600&display=swap');
 
@@ -29,31 +21,6 @@
     --primary: #cbc4c2;
     --secondary: #d0d6d7;
     --accent: #766865;
-}
-
-* {
-    margin: 0;
-    border: 0;
-    padding: 0;
-}
-
-html {
-    box-sizing: border-box;
-    font-size: 75%;
-    scroll-behavior: smooth;
-    /* overflow: hidden; */
-}
-
-body {
-    font-family: "Pixelify Sans", sans-serif;
-    font-size: 1.8rem;
-    /* 18px */
-    font-weight: 400;
-    line-height: 1.4;
-    color: var(--text);
-    background-color: var(--background-color);
-    filter: drop-shadow(0px 4px 4px var(--accent));
-    /*   background-color: blue; */
 }
 
 #tsparticles {
@@ -97,36 +64,6 @@ body {
     filter: drop-shadow(0px 10px 4px var(--accent));
 }
 
-.navbar {
-    display: flex;
-    justify-content: flex-end;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    filter: drop-shadow(0px 4px 4px var(--accent));
-    z-index: 2;
-}
-
-.list {
-    list-style: none;
-    display: flex;
-}
-
-.list li {
-    margin: 10px;
-    text-align: center;
-}
-
-#myCanvas {
-    margin: auto;
-    max-width: 1000px;
-    max-height: 650px;
-    min-width: 100px;
-    min-height: 100px;
-    object-fit: contain;
-}
-
 @media screen {}
 
 #background {
@@ -140,14 +77,6 @@ body {
     background-color: var(--background);
 }
 
-a {
-    color: var(--text);
-    text-decoration: none;
-}
-
-a:hover {
-    color: var(--secondary);
-}
 
 .projects-section {
     z-index: 0;
