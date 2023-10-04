@@ -106,9 +106,3 @@ const options = {
 
 // tsParticles.load has two parameters, the first one is the id of the container, the second one is an object with the options
 tsParticles.load("tsparticles", options);
-
-let tp = document.getElementById("tsparticles");
-window.addEventListener("scroll", (e) => {
-    const scrollAmount = window.scrollY;
-    tp.style.transform = `translateY(${scrollAmount}px)`;
-});

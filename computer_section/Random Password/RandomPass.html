@@ -7,30 +7,42 @@
 </head>
 
 <body>
-    <div class="container">
-        <h2>Random Password Generator</h2>
-        <label for="length">Password Length:</label>
-        <input type="number" id="length" min="1" value="12"><br>
 
-        <label for="includeSpecial">Include Special Characters:</label>
-        <input type="checkbox" id="includeSpecial"><br>
+    <div class="holder">
+        <div class="container">
+            <h2>Random Password Generator</h2>
+            <label for="length">Password Length:</label>
+            <input type="number" id="length" min="1" value="16"><br>
 
-        <label for="includeUpper">Include Uppercase Letters:</label>
-        <input type="checkbox" id="includeUpper"><br>
+            <label for="includeSpecial">Include Special Characters:</label>
+            <input type="checkbox" id="includeSpecial"><br>
 
-        <label for="includeNums">Include Numbers:</label>
-        <input type="checkbox" id="includeNums"><br>
+            <label for="includeUpper">Include Uppercase Letters:</label>
+            <input type="checkbox" id="includeUpper"><br>
 
-        <button onclick="generateRandomPassword()">Generate Password</button>
-        <p id="password"></p>
+            <label for="includeNums">Include Numbers:</label>
+            <input type="checkbox" id="includeNums"><br>
+
+            <button onclick="generateRandomPassword()">Generate Password</button>
+            <p id="password"></p>
+        </div>
     </div>
 
-    <script src="./random_password.js"></script>
     <!-- <a href="../index.html">home</a> -->
     <div id="spacer"></div>
     <div class="button-container">
-        <a href="../index.html" class="home-button">Return Home</a>
+        <a href="../../index.html" class="home-button">Return Home</a>
+    </div>
+    <div id="tsparticles"></div>
+    <div>
+        <canvas id="background"></canvas>
     </div>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/1.18.11/tsparticles.min.js"
+    integrity="sha512-SrYSABdk01dnXiEz2YOFvpgWn/vePlQwbr/Od+rs6x8/hjfLfR6YfZuU+qW4QaQYnl8mL1a4DgjMMdiXShNzjg=="
+    crossorigin="anonymous"></script>
+<script src="snow.js"></script>
+<script src="./random_password.js"></script>
+
 
 </html>
