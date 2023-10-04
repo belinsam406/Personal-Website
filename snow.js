@@ -64,43 +64,6 @@ const options = {
             width: 1,
             height: 1
         },
-        // particles: {
-        //     move: {
-        //         speed: 6,
-        //         direction: "bottom",
-        //         out_mode: "out",
-        //         straight: false,
-        //         outModes: {
-        //             default: "destroy",
-        //         }
-        //     },
-        //     wobble: {
-        //         enable: true,
-        //         distance: 20,
-        //         speed: 1,
-        //     },
-        //     number: {
-        //         value: 10,
-        //         density: {
-        //             enable: true,
-        //         },
-        //     },
-        //     shape: {
-        //         character: [
-        //             {
-        //                 fill: true,
-        //                 font: "sans-serif",
-        //                 value: ["🏂", "⛷️"],
-        //                 style: "",
-        //                 weight: 400
-        //             }
-        //         ],
-        //         type: "char"
-        //     },
-        //     size: {
-        //         value: 30,
-        //     },
-        // },
     },
 };
 
