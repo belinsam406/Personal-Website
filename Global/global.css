@@ -16,6 +16,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,500;1,100;1,600&display=swap');
 
 :root {
+    /* colors generated from https://www.realtimecolors.com/ */
     --text: #000405;
     --background: #89cfeb;
     --primary: #cbc4c2;
@@ -43,9 +44,6 @@ body {
     font-weight: 400;
     line-height: 1.4;
     color: var(--text);
-    background-color: var(--background-color);
-    /* filter: drop-shadow(0px 4px 4px var(--accent)); */
-    /*   background-color: blue; */
 }
 
 .navbar {
@@ -77,3 +75,22 @@ a {
 a:hover {
     color: var(--secondary);
 }
+
+@media screen {}
+
+#background {
+    z-index: -3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(52, 144, 248); */
+    background-color: var(--background);
+  }
+  
+  #tsparticles {
+    z-index: -2;
+    width: 100%;
+    height: 100vh;
+  }

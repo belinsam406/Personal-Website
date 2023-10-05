@@ -4,10 +4,22 @@
     <link rel="icon" href="../../Assets/me/IMG_3627.JPG" type="image/x-icon">
     <title>Samuel Belin</title>
     <link rel="stylesheet" href="RandomPass.css ">
+    <link rel="stylesheet" href="../../Global/global.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
 </head>
 
 <body>
-
+    <nav id="navbar" class="navbar">
+        <ul class="list">
+            <li><a href="../index.html#information-container">Home</a>
+            </li>
+            <li><a href="../index.html#projects">Projects</a>
+            </li>
+            <li><a href="../index.html#profile-link">Contact</a>
+            </li>
+        </ul>
+    </nav>
     <div class="holder">
         <div class="container">
             <h2>Random Password Generator</h2>
@@ -23,16 +35,17 @@
             <label for="includeNums">Include Numbers:</label>
             <input type="checkbox" id="includeNums"><br>
 
-            <button onclick="generateRandomPassword()">Generate Password</button>
+            <button onclick="generateRandomPassword()" class="button">Generate Password</button>
             <p id="password"></p>
+        </div>
+        <div class="button-container">
+            <a href="../../index.html" class="home-button">Return Home</a>
         </div>
     </div>
 
     <!-- <a href="../index.html">home</a> -->
-    <div id="spacer"></div>
-    <div class="button-container">
-        <a href="../../index.html" class="home-button">Return Home</a>
-    </div>
+    <!-- <div id="spacer"></div> -->
+    
     <div id="tsparticles"></div>
     <div>
         <canvas id="background"></canvas>
