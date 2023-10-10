@@ -1,9 +1,9 @@
 const options = {
     name: "Snow",
-    fpsLimit: 30,
+    fpsLimit: 240,
     particles: {
         number: {
-            value: 500,
+            value: 50,
             density: {
                 enable: true,
             },
@@ -12,7 +12,7 @@ const options = {
             value: "#FFFFFF",
         },
         shape: {
-            type: "circle"
+            type: "square"
         },
         opacity: {
             value: 1,

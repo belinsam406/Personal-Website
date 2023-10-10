@@ -37,7 +37,7 @@ html {
 .home-button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: var(--accent);
+  background-color: var(--primary);
   color: var(--text);
   text-decoration: none;
   border: none;
@@ -74,4 +74,9 @@ html {
   background-color: var(--accent);
   color: var(--text);
   border-radius: 5px;
+
+}
+button:hover{
+  background-color: #665b58;
+  cursor: pointer;
 }
