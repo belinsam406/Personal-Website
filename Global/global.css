@@ -15,13 +15,28 @@
 @import url("https://fonts.googleapis.com/css?family=Pixelify Sans:700|Pixelify Sans:400");
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,500;1,100;1,600&display=swap');
 
-:root {
-    /* colors generated from https://www.realtimecolors.com/ */
+/* :root {
+    colors generated from https://www.realtimecolors.com/
     --text: #000405;
     --background: #89cfeb;
     --primary: #cbc4c2;
     --secondary: #d0d6d7;
     --accent: #766865;
+} */
+:root[data-theme="light"] {
+    --text: #000405;
+    --background: #89cfeb;
+    --primary: #cbc4c2;
+    --secondary: #d0d6d7;
+    --accent: #766865;
+}
+
+:root[data-theme="dark"] {
+    --text: #fafeff;
+    --background: #145a76;
+    --primary: #3d3634;
+    --secondary: #282e2f;
+    --accent: #9a8c89;
 }
 
 * {
@@ -53,7 +68,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    filter: drop-shadow(0px 4px 4px var(--accent));
+    filter: drop-shadow(0px 4px 4px var(--accent)); 
     z-index: 2;
 }
 
@@ -94,13 +109,26 @@ a:hover {
     height: 100vh;
 }
 
+.large-screen-content {
+    display: block; /* or any other display property you want */
+}
+
+/* Default styles for small screens */
+.small-screen-content {
+    display: none;
+}
+
+/* Media query to adjust styles based on screen size */
 @media (max-width: 600px) {
-    body {
-        font-size: 1.2rem;
+    .large-screen-content {
+        display: none;
     }
 
-    .list {
-        padding-right: 5%;
+    .small-screen-content {
+        display: block; /* or any other display property you want */
+        text-align: center;
     }
-    
+    #information-container{
+        padding: 5%;
+    }
 }

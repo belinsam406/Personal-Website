@@ -12,7 +12,7 @@
   --secondary: #282e2f;
   --accent: #9a8c89;
 } */
-@import url("https://fonts.googleapis.com/css?family=Pixelify Sans:700|Pixelify Sans:400");
+/* @import url("https://fonts.googleapis.com/css?family=Pixelify Sans:700|Pixelify Sans:400");
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,500;1,100;1,600&display=swap');
 
 :root {
@@ -21,7 +21,7 @@
     --primary: #cbc4c2;
     --secondary: #d0d6d7;
     --accent: #766865;
-}
+} */
 
 /* #tsparticles {
     z-index: -2;
@@ -166,47 +166,34 @@
     height: 100vh;
 }
 
+#theme-toggle{
+    background-color: var(--background);
+}
 
+#theme-toggle:hover{
+    background-color: var(--accent);
+}
 
-/* .hider-wrapper {
+/* .large-screen-content {
     display: block; 
 }
 
 
-.working-on {
-    display: none;
-}
-
-
-@media (max-width: 600px) {
-    .hider-wrapper {
-        display: none;
-    }
-
-    .working-on {
-        display: block; 
-    }
-} */
-
-.large-screen-content {
-    display: block; /* or any other display property you want */
-}
-
-/* Default styles for small screens */
 .small-screen-content {
     display: none;
 }
 
-/* Media query to adjust styles based on screen size */
+
 @media (max-width: 600px) {
     .large-screen-content {
         display: none;
     }
 
     .small-screen-content {
-        display: block; /* or any other display property you want */
+        display: block; 
+        text-align: center;
     }
     #information-container{
         padding: 5%;
     }
-}
+} */
