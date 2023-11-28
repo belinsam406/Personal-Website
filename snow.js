@@ -112,7 +112,6 @@ const darkTheme={
 
 // tsParticles.load has two parameters, the first one is the id of the container, the second one is an object with the options
 tsParticles.load("tsparticles", lightTheme);
-// tsParticles.load("tsparticles", darkTheme);
 
 
 let tp = document.getElementById("tsparticles");
