@@ -6,25 +6,16 @@ function switchTheme(e) {
         console.log("dark theme");
         document.documentElement.setAttribute('data-theme', 'dark');
         tsParticles.load("tsparticles", darkTheme);
+        localStorage.setItem('theme', 'dark'); //add this
+
     }
     else {
         console.log("light theme");
         document.documentElement.setAttribute('data-theme', 'light');
         tsParticles.load("tsparticles", lightTheme);
+        localStorage.setItem('theme', 'light'); //add this
+
     }
 }
 
 toggleSwitch.addEventListener('change', switchTheme, false);
-
-//storing the decision for future visits
-function switchTheme(e) {
-    if (e.target.checked) {
-        document.documentElement.setAttribute('data-theme', 'dark');
-        localStorage.setItem('theme', 'dark'); //add this
-    }
-    else {
-        document.documentElement.setAttribute('data-theme', 'light');
-        localStorage.setItem('theme', 'light'); //add this
-    }
-}
-

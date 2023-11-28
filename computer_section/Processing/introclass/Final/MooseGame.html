@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
   <title>P5JS code</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script> -->
   <link rel="stylesheet" type="text/css" href="mooseStyle.css">
   <link rel="stylesheet" href="../../../../Global/global.css">
   <link rel="icon" href="../../../../Assets/me/IMG_3627.JPG" type="image/x-icon">
@@ -13,26 +13,25 @@
 </head>
 
 <body>
-  <div>
-    <canvas id="background"></canvas>
-  </div>
   <div id="tsparticles"><!-- auto loads canvas --></div>
   <nav id="navbar" class="navbar">
     <ul class="list">
-        <li><a href="#information-container">Home</a>
-        </li>
-        <li><a href="#projects">Projects/About</a>
-        </li>
-        <li><a href="#profile-link">Contact</a>
-        </li>
-        <li><div class="theme-switch-wrapper">
-            <label class="theme-switch" for="checkbox">
-                <input type="checkbox" id="checkbox" />
-                <div class="slider round"></div>
+      <li><a href="../../../../index.html#information-container">Home</a>
+      </li>
+      <li><a href="../../../../index.html#projects">Projects/About</a>
+      </li>
+      <li><a href="../../../../index.html#profile-link">Contact</a>
+      </li>
+      <li>
+        <div class="theme-switch-wrapper">
+          <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
           </label>
-        </div></li>
+        </div>
+      </li>
     </ul>
-</nav>
+  </nav>
 
   <div class="holder">
     <div class="container">
@@ -42,9 +41,6 @@
       <div class="canvas-container" id="container1">
         <!-- canvas goes here -->
       </div>
-      <!-- <div class="" text-container>
-        <p id="console-text"></p>
-      </div> -->
     </div>
     <div class="spacer"></div>
     <!-- <a href="../../index.html">return home</a> -->
@@ -59,6 +55,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/1.18.11/tsparticles.min.js"
   integrity="sha512-SrYSABdk01dnXiEz2YOFvpgWn/vePlQwbr/Od+rs6x8/hjfLfR6YfZuU+qW4QaQYnl8mL1a4DgjMMdiXShNzjg=="
   crossorigin="anonymous"></script>
-<script src="../../../../Global/nomovesnow.js"></script>
+<!-- <script src="../../../../Global/nomovesnow.js"></script> -->
+<script src="../../../../snow.js"></script>
+<script src="../../../../Global/LightDark.js"></script>
 
 </html>
