@@ -43,7 +43,7 @@
     margin: 0;
     border: 0;
     padding: 0;
-    transition: color 0.5s;
+    /* transition: color 0.5s; */
 }
 
 html {
@@ -175,7 +175,7 @@ a:hover{
 }
 
 /* Media query to adjust styles based on screen size */
-@media (max-width: 600px) {
+@media (max-width: 600px), (max-height: 600px) {
     .large-screen-content {
         display: none;
     }

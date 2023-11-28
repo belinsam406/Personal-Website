@@ -117,5 +117,7 @@ tsParticles.load("tsparticles", lightTheme);
 let tp = document.getElementById("tsparticles");
 window.addEventListener("scroll", (e) => {
     const scrollAmount = window.scrollY;
+    //write something in here that would detect if the page can scroll or not
     tp.style.transform = `translateY(${scrollAmount}px)`;
+
 });
