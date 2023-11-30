@@ -118,6 +118,7 @@ let tp = document.getElementById("tsparticles");
 window.addEventListener("scroll", (e) => {
     const scrollAmount = window.scrollY;
     //write something in here that would detect if the page can scroll or not
+    //possibly check if the body has a class of scrollable
     tp.style.transform = `translateY(${scrollAmount}px)`;
 
 });
