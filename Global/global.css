@@ -24,71 +24,71 @@
     --accent: #766865;
 } */
 :root[data-theme="light"] {
-    --text: #000405;
-    --background: #89cfeb;
-    --primary: #cbc4c2;
-    --secondary: #d0d6d7;
-    --accent: #766865;
+  --text: #000405;
+  --background: #89cfeb;
+  --primary: #cbc4c2;
+  --secondary: #d0d6d7;
+  --accent: #766865;
 }
 
 :root[data-theme="dark"] {
-    --text: #fafeff;
-    --background: #145a76;
-    --primary: #3d3634;
-    --secondary: #282e2f;
-    --accent: #9a8c89;
+  --text: #fafeff;
+  --background: #145a76;
+  --primary: #3d3634;
+  --secondary: #282e2f;
+  --accent: #9a8c89;
 }
 
 * {
-    margin: 0;
-    border: 0;
-    padding: 0;
-    /* transition: color 0.5s; */
+  margin: 0;
+  border: 0;
+  padding: 0;
+  /* transition: all .5s ease; */
 }
 
 html {
-    box-sizing: border-box;
-    font-size: 75%;
-    scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-size: 75%;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: "Pixelify Sans", sans-serif;
-    font-size: 1.8rem;
-    font-weight: 400;
-    line-height: 1.4;
-    color: var(--text);
-    filter: drop-shadow(0px 4px 4px var(--accent));
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--text);
+  filter: drop-shadow(0px 4px 4px var(--accent));
 }
 
 .navbar {
-    display: flex;
-    justify-content: flex-end;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    filter: drop-shadow(0px 4px 4px var(--accent));
-    z-index: 2;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  filter: drop-shadow(0px 4px 4px var(--accent));
+  z-index: 2;
 }
 
 .list {
-    list-style: none;
-    display: flex;
+  list-style: none;
+  display: flex;
 }
 
 .list li {
-    margin: 10px;
-    text-align: center;
+  margin: 10px;
+  text-align: center;
 }
 
 a {
-    color: var(--text);
-    text-decoration: none;
+  color: var(--text);
+  text-decoration: none;
 }
 
-a:hover{
-    color: var(--accent);
+a:hover {
+  color: var(--accent);
 }
 
 /* #background {
@@ -102,91 +102,65 @@ a:hover{
 } */
 
 #tsparticles {
-    z-index: -2;
-    width: 100%;
-    height: 100vh;
+  z-index: -2;
+  width: 100%;
+  height: 100vh;
 }
 
 /* slider code start */
 /* written with help from https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8 */
 .theme-switch-wrapper {
-    display: flex;
-    align-items: center;
-  }
-  .theme-switch {
-    display: inline-block;
-    height: 34px;
-    position: relative;
-    width: 60px;
-  }
-  
-  .theme-switch input {
-    display:none;
-  }
-  
-  .slider {
-    background-color: #145a76;
-    bottom: 0;
-    cursor: pointer;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    transition: .4s;
-  }
-  
-  .slider:before {
-    background-color: #fff;
-    bottom: 4px;
-    content: "";
-    height: 26px;
-    left: 4px;
-    position: absolute;
-    transition: .4s;
-    width: 26px;
-  }
-  
-  input:checked + .slider {
-    background-color: #89cfeb;
-  }
-  
-  input:checked + .slider:before {
-    transform: translateX(26px);
-  }
-  
-  .slider.round {
-    border-radius: 34px;
-  }
-  
-  .slider.round:before {
-    border-radius: 50%;
-  }
+  display: flex;
+  align-items: center;
+}
+
+.theme-switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.slider {
+  background-color: #145a76;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 26px;
+}
+
+input:checked+.slider {
+  background-color: #89cfeb;
+}
+
+input:checked+.slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
 
 /* slider code end */
-
-.large-screen-content {
-    display: block;
-    /* or any other display property you want */
-}
-
-/* Default styles for small screens */
-.small-screen-content {
-    display: none;
-}
-
-/* Media query to adjust styles based on screen size */
-@media (max-width: 600px), (max-height: 600px) {
-    .large-screen-content {
-        display: none;
-    }
-
-    .small-screen-content {
-        display: block;
-        /* or any other display property you want */
-        text-align: center;
-    }
-
-    #information-container {
-        padding: 5%;
-    }
-}
