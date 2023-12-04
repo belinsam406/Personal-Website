@@ -4,7 +4,6 @@
 <head>
   <title>P5JS code</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script> -->
   <link rel="stylesheet" type="text/css" href="mooseStyle.css">
   <link rel="stylesheet" href="../../../../Global/global.css">
   <link rel="icon" href="../../../../Assets/me/IMG_3627.JPG" type="image/x-icon">
@@ -13,7 +12,10 @@
 </head>
 
 <body>
-  <div id="tsparticles"><!-- auto loads canvas --></div>
+  <div id="tsparticles" style="transform: translateY(0px);"><!--auto loads canvas--></div>
+  <div>
+    <canvas id="background"></canvas>
+  </div>
   <nav id="navbar" class="navbar">
     <ul class="list">
       <li><a href="../../../../index.html#information-container">Home</a>
@@ -55,8 +57,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/1.18.11/tsparticles.min.js"
   integrity="sha512-SrYSABdk01dnXiEz2YOFvpgWn/vePlQwbr/Od+rs6x8/hjfLfR6YfZuU+qW4QaQYnl8mL1a4DgjMMdiXShNzjg=="
   crossorigin="anonymous"></script>
-<!-- <script src="../../../../Global/nomovesnow.js"></script> -->
-<script src="../../../../snow.js"></script>
+<script src="../../../../Global/snow.js"></script>
 <script src="../../../../Global/LightDark.js"></script>
 
 </html>

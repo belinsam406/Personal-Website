@@ -7,12 +7,16 @@
     <link rel="stylesheet" href="RandomPass.css ">
     <link rel="stylesheet" href="../../Global/global.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="icon" href="../../Assets/me/IMG_3627.JPG" type="image/x-icon">
+    <link rel="icon" href="../../Assets/me/IMG_3627.JPG" type="image/x-icon">
 
 
 </head>
 
 <body>
+    <div id="tsparticles" style="transform: translateY(0px);"><!--auto loads canvas--></div>
+    <div>
+        <canvas id="background"></canvas>
+    </div>
     <nav id="navbar" class="navbar">
         <ul class="list">
             <li><a href="../../index.html#information-container">Home</a>
@@ -21,12 +25,14 @@
             </li>
             <li><a href="../../index.html#profile-link">Contact</a>
             </li>
-            <li><div class="theme-switch-wrapper">
-                <label class="theme-switch" for="checkbox">
-                    <input type="checkbox" id="checkbox" />
-                    <div class="slider round"></div>
-              </label>
-            </div></li>
+            <li>
+                <div class="theme-switch-wrapper">
+                    <label class="theme-switch" for="checkbox">
+                        <input type="checkbox" id="checkbox" />
+                        <div class="slider round"></div>
+                    </label>
+                </div>
+            </li>
         </ul>
     </nav>
 
@@ -52,19 +58,12 @@
             <a href="../../index.html#projects" class="home-button">Return Home</a>
         </div>
     </div>
-
-    <!-- <a href="../index.html">home</a> -->
-    <!-- <div id="spacer"></div> -->
-    
-    <div id="tsparticles"></div>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/1.18.11/tsparticles.min.js"
     integrity="sha512-SrYSABdk01dnXiEz2YOFvpgWn/vePlQwbr/Od+rs6x8/hjfLfR6YfZuU+qW4QaQYnl8mL1a4DgjMMdiXShNzjg=="
     crossorigin="anonymous"></script>
-<!-- <script src="../../Global/nomovesnow.js"></script> -->
 <script src="./random_password.js"></script>
-<script src="../../snow.js"></script>
+<script src="../../Global/snow.js"></script>
 <script src="../../Global/LightDark.js"></script>
-
 
 </html>
