@@ -60,7 +60,6 @@ const backgroundTheme = {
 
 
 // tsParticles.load has two parameters, the first one is the id of the container, the second one is an object with the options
-// lightTheme.background.color = "#89cfeb";
 tsParticles.load("tsparticles", backgroundTheme);
 
 if (currentTheme) {
@@ -88,15 +87,25 @@ toggleSwitch.addEventListener('change', switchTheme, false);
 let tp = document.getElementById("tsparticles");
 var canvas = tp ? tp.querySelector('.tsparticles-canvas-el') : null;
 var canvasHeight = 0;
+//TODO: come back and delete unneeded stuff
+console.log(document.documentElement.scrollHeight)
+console.log(document.documentElement.scrollHeight-window.innerHeight);
+//scrollingElement.style.top = scrollPosition + "px";
 
-window.addEventListener("scroll", (e) => {
-    if(canvas){
-        canvasHeight = canvas.height+10;
-    }
-    // need to figure out how to add 110px
-    const scrollAmount = window.scrollY;
-    if(scrollAmount <= (canvasHeight+110)){
-        tp.style.transform = `translateY(${scrollAmount}px)`;
-    }
+/*
+// Calculate the maximum scroll position (total document height - viewport height)
+      var maxScroll = document.documentElement.scrollHeight - window.innerHeight;
 
-});
+      // Limit the scroll position so that the element stops at the bottom of the page
+      scrollPosition = Math.min(scrollPosition, maxScroll);
+      */
+
+if (canvas) {
+    canvasHeight = document.documentElement.scrollHeight-window.innerHeight;
+}
+    window.addEventListener("scroll", (e) => {
+        const scrollAmount = window.scrollY-8;
+        if (Math.round(scrollAmount) <= (canvasHeight)) {
+            tp.style.transform = `translateY(${scrollAmount}px)`;
+        }
+    });
