@@ -1,35 +1,3 @@
-/* :root[data-theme="light"] {
-  --text: #000405;
-  --background: #89cfeb;
-  --primary: #cbc4c2;
-  --secondary: #d0d6d7;
-  --accent: #766865;
-}
-:root[data-theme="dark"] {
-  --text: #fafeff;
-  --background: #145a76;
-  --primary: #3d3634;
-  --secondary: #282e2f;
-  --accent: #9a8c89;
-} */
-/* @import url("https://fonts.googleapis.com/css?family=Pixelify Sans:700|Pixelify Sans:400");
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,500;1,100;1,600&display=swap');
-
-:root {
-    --text: #000405;
-    --background: #89cfeb;
-    --primary: #cbc4c2;
-    --secondary: #d0d6d7;
-    --accent: #766865;
-} */
-
-/* #tsparticles {
-    z-index: -2;
-    width: 100%;
-    height: 100vh;
-
-} */
-
 #information-container {
     z-index: 0;
     height: 5vw;

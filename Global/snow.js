@@ -9,6 +9,7 @@ const backgroundTheme = {
             value: 100,
             density: {
                 enable: true,
+                area: 400
             },
         },
         color: {
@@ -52,7 +53,7 @@ const backgroundTheme = {
     background: {
         color: {
             value: "transparent",
-          },
+        },
     },
 };
 
@@ -85,10 +86,20 @@ function switchTheme(e) {
 toggleSwitch.addEventListener('change', switchTheme, false);
 
 let tp = document.getElementById("tsparticles");
+var canvas = tp ? tp.querySelector('.tsparticles-canvas-el') : null;
+var canvasHeight = 0;
+
 window.addEventListener("scroll", (e) => {
+    if(canvas){
+        canvasHeight = canvas.height+10;
+    }
+    // need to figure out how to add 110px
     const scrollAmount = window.scrollY;
-    //write something in here that would detect if the page can scroll or not
-    //possibly check if the body has a class of scrollable
-    tp.style.transform = `translateY(${scrollAmount}px)`;
+    if(scrollAmount <= (canvasHeight+110)){
+        console.log("scroll Amount: "+scrollAmount+"\ncanvas Height: "+canvasHeight+"\ninnerHeight: "+window.innerWidth)
+        tp.style.transform = `translateY(${scrollAmount}px)`;
+    }else{ 
+        console.log("stopped");
+    }
 
 });
