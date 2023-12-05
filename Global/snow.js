@@ -87,18 +87,6 @@ toggleSwitch.addEventListener('change', switchTheme, false);
 let tp = document.getElementById("tsparticles");
 var canvas = tp ? tp.querySelector('.tsparticles-canvas-el') : null;
 var canvasHeight = 0;
-//TODO: come back and delete unneeded stuff
-console.log(document.documentElement.scrollHeight)
-console.log(document.documentElement.scrollHeight-window.innerHeight);
-//scrollingElement.style.top = scrollPosition + "px";
-
-/*
-// Calculate the maximum scroll position (total document height - viewport height)
-      var maxScroll = document.documentElement.scrollHeight - window.innerHeight;
-
-      // Limit the scroll position so that the element stops at the bottom of the page
-      scrollPosition = Math.min(scrollPosition, maxScroll);
-      */
 
 if (canvas) {
     canvasHeight = document.documentElement.scrollHeight-window.innerHeight;
