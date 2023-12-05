@@ -96,10 +96,7 @@ window.addEventListener("scroll", (e) => {
     // need to figure out how to add 110px
     const scrollAmount = window.scrollY;
     if(scrollAmount <= (canvasHeight+110)){
-        console.log("scroll Amount: "+scrollAmount+"\ncanvas Height: "+canvasHeight+"\ninnerHeight: "+window.innerWidth)
         tp.style.transform = `translateY(${scrollAmount}px)`;
-    }else{ 
-        console.log("stopped");
     }
 
 });
